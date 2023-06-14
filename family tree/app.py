@@ -22,11 +22,13 @@ def father():
 
     return render_template('father.html' , name = dname , age = age2)
 # define the route to mother webpage
+@app.route('/mother')
 def mother():
     mname = "Sapna"
     age3 = "Unknown....."
-    return render_template('friend.html' , name = mname , age = age3)
+    return render_template('mother.html' , name = mname , age = age3)
 # define the route to friends webpage
+@app.route('/friend')
 def friends():
     bname = "Prithika"
     age4 = "14"
